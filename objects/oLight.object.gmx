@@ -108,7 +108,7 @@ if (keyboard_check_released(ord('Q')) ||
 */
 
 
-
+/*
 if (keyboard_check_pressed(ord('P'))){
     if (room == rPointLightTest)
         room = rSpotLightTest;
@@ -117,7 +117,7 @@ if (keyboard_check_pressed(ord('P'))){
     else
         room = rPointLightTest;
 }
-        
+*/     
 </string>
           </argument>
         </arguments>

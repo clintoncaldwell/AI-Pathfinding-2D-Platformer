@@ -353,14 +353,17 @@ if(background_exists(pause_BG)) {
 }
 draw_set_colour(c_white);
 
-if (curActor != noone){
-    draw_text(room_width - 200, 48, "CurActor: " +string(curActor));
-    draw_text(room_width - 400, 64, "CurActor_hspd: " +string(curActor.hspd));
-    draw_text(room_width - 400, 80, "CurActor_vspd: " +string(curActor.vspd));
-}
+
 
 
 if (global.debug){
+    // Current Actor Info
+    if (curActor != noone){
+        draw_text(room_width - 200, 48, "CurActor: " +string(curActor));
+        draw_text(room_width - 400, 64, "CurActor_hspd: " +string(curActor.hspd));
+        draw_text(room_width - 400, 80, "CurActor_vspd: " +string(curActor.vspd));
+    }
+    
     // Game FPS
     draw_text(room_width - 400, 00, "Debug: " +string(global.debug))
     draw_text(room_width - 400, 16, "FPS  :   " + string(fps_real));
@@ -424,7 +427,7 @@ if (global.debug){
 
 // Turn Order Checks
 var debug_x = room_width -200; 
-
+/*
 if (ds_exists(T, ds_type_list)){
     // Draw turnOrder list size
     draw_text(debug_x, 125, "TurnOrder Size: " + string(ds_list_size(T)))
@@ -456,10 +459,11 @@ draw_text(debug_x, 75, "Actor Count = " + string(actorCount));
 // show timestamps for all actors
 with (oActor){
     draw_text(x,y-32, string(wt));
-    /**/
+    
     for(var t=0; t&lt;array_length_1d(timestamps)-1;t++)
         draw_text(x ,y-80-(16 * t), string(timestamps[t]));
 }
+*/
 </string>
           </argument>
         </arguments>

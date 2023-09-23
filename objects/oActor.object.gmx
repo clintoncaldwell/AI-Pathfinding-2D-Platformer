@@ -178,17 +178,18 @@ if (place_meeting(x, y+1, oSolid))
             ckey = false;   
     }   // End-Crouching -------------------------------
     
-    
+    /*
     // Jumping -------------------------------
-    if (jkey) {
+    if (jkey) {w
         vspd = - jspd;
     }
-    
+    */
 }else {
     // Gravity
     if (vspd &lt; maxFallSpeed) //10  // higher = heavier
         vspd += oAstar.grav * global.timeMultiplier * global.delta;  
 }
+
 
 if (shift &amp;&amp; jkey)//! airborne) )
         {

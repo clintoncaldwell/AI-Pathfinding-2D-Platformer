@@ -31,7 +31,7 @@
 initZoomWidth = view_wport[0]/2;
 initZoomHeight = view_hport[0]/2;
 zoomStep = 25; // zoom in/out 25% each time button pressed
-zoomPercent = 125; //50
+zoomPercent = 75; //50
 targetZoomPercent = zoomPercent; // for lerp
 
 maxZoom = 200;
