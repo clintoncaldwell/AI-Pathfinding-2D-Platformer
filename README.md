@@ -14,6 +14,10 @@ Controls:
 - Right Click: Place Player
 - Left Click: Set Destination
 
+## Demo
+
+https://github.com/user-attachments/assets/08b97185-0779-4b4d-8d42-545df06d3067
+
 ## Screenshots
 
 ![image](https://github.com/anEnemyStand/Platformer-Pathfinding/assets/16449117/e9e87e04-3986-4f43-8b2e-4ac00065ab11)
